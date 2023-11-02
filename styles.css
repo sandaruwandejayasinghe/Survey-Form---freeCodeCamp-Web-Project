@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: #fff0ce;
+}
+
+h1 {
+  text-align: center;
+  color: #0c356a;
+  padding: 20px;
+  padding-bottom: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#description {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#survey-form {
+  background-color: #0c356a;
+  max-width: 800px;
+  min-width: 300px;
+  padding: 20px;
+  padding-bottom: 3em;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1em;
+  padding: 0.25em 1em 0 1em;
+  display: block;
+}
+
+.gender {
+  padding-bottom: 1em;
+}
+
+input,
+select,
+textarea {
+  display: block;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  padding: 0.25em 0.7em;
+  border-radius: 0.25em;
+  color: #0c356a;
+  border: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #0174be;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  margin-right: 0.25em;
+}
+
+input[type="radio"]:last-of-type {
+  margin-left: 2em;
+}
+
+.interests label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.interests label input {
+  margin-bottom: 0.4em;
+}
+
+button {
+  background-color: #ffc436;
+  color: #0c356a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 10px auto;
+  min-width: calc(100% - 2em);
+  display: block;
+}
+
+button:hover {
+  background-color: #ffaa36;
+}
+footer {
+  padding-bottom: 2em;
+}
+footer p {
+  text-align: center;
+  padding-bottom: 0.25em;
+  font-size: 0.5em;
+}
+a {
+  text-decoration: none;
+  color: #ff8736;
+  font-weight: 700;
+}
+a:hover {
+  color: #0c356a;
+}

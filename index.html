@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take a moment to fill out our survey form.</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="120" required>
+
+            <label for="dropdown">Country:</label>
+            <select id="dropdown">
+                <option value="" disabled selected>Select Your Country</option>
+                <option value="srilanka">Sri Lanka</option>
+                <option value="india">India</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+        </fieldset>
+        <fieldset class="gender">
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+
+        <fieldset class="interests">
+            <legend>Tell Us About Your Hobbies and Interests:</legend>
+            <label for="sports">
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                Sports
+            </label>
+            <label for="music">
+                <input type="checkbox" id="music" name="interests" value="music">
+                Music
+            </label>
+            <label for="movies">
+                <input type="checkbox" id="movies" name="interests" value="movies">
+                Movies
+            </label>
+            <label for="reading">
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                Reading
+            </label>
+            <label for="travel">
+                <input type="checkbox" id="travel" name "interests" value="travel">
+                Travel
+            </label>
+            <label for="cooking">
+                <input type="checkbox" id="cooking" name="interests" value="cooking">
+                Cooking
+            </label>
+            <label for="art">
+                <input type="checkbox" id="art" name="interests" value="art">
+                Art
+            </label>
+            <label for="hiking">
+                <input type="checkbox" id="hiking" name="interests" value="hiking">
+                Hiking
+            </label>
+            <label for="gardening">
+                <input type="checkbox" id="gardening" name="interests" value="gardening">
+                Gardening
+            </label>
+            <label for="gaming">
+                <input type="checkbox" id="gaming" name="interests" value="gaming">
+                Gaming
+            </label>
+            <label for="other">
+                <input type="checkbox" id="other" name="interests" value="other">
+                Other
+            </label>
+            <input type="text" id="customInterest" name="customInterest" placeholder="Specify other interest">
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Comments:</legend>
+            <textarea id="comments" rows="4" placeholder="Enter your comments"></textarea>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <footer>
+        <p>&copy; 2023 Sandaruwan De Jayasinghe. All rights reserved.</p>
+        <p>This survey form was created as a certification project for <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.</a></p>
+    </footer>
+    
+</body>
+</html>
